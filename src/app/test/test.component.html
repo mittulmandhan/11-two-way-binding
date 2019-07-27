@@ -1,1 +1,8 @@
-<p>test works!</p>
+<!-- Here sqaure brackets are for property binding i.e. flow from template to class and parenthesis represent event binding i.e. the data flow from the class to the template -->
+<!-- There is two way data flow which is also called as two way binding -->
+<!-- Angular does not understand ngModel directive because it is a part of separate module called forms -->
+<!-- so we need to first import formsModule in app.module.ts -->
+<!-- once it is added, whatever u type in the input box will echo side by side because of two way binding -->
+<!-- The text you input first flows from template class and then from class back to template and you see the echo of your input -->
+<!-- This will ensure that view and property values are always consistent -->
+<input [(ngModel)]="name" type="text"> {{name}}
